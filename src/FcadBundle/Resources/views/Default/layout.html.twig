@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Официальный сайт Факультета компьютерного проектирования</title>
+    <link rel="stylesheet" href="{{asset('css/reset.css')}}">
+    <link rel="stylesheet" href="{{asset('css/index.css')}}">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic,cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{asset('assets/css/sangarSlider.css')}}" type="text/css" media="all">
+		<link rel="stylesheet" href="{{asset('assets/themes/default/default.css')}}" type="text/css" media="all">
+    <script type="text/javascript" src="{{asset('assets/js/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/jquery.touchSwipe.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/imagesloaded.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarBaseClass.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarSetupLayout.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarSizeAndScale.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarShift.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarSetupBulletNav.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarSetupNavigation.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarSetupSwipeTouch.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarSetupTimer.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarBeforeAfter.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarLock.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarResponsiveClass.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarResetSlider.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarTextbox.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider/sangarVideo.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/sangarSlider.js')}}"></script>
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?133"></script>
+
+<script type="text/javascript">
+VK.init({apiId: 5467378, onlyWidgets: true});
+</script>
+
+    <script type='text/javascript'>
+      var sangar = jQuery(document).ready(function($) {
+        var sangar = $('.sangar-example').sangarSlider({
+          timer :  false,
+          directionalNavShowOpacity : '0.9',
+          directionalNavHideOpacity : '0.5',
+          directionalNavNextClass : 'exNext',
+          directionalNavPrevClass : 'exPrev',
+          width : 1100,
+          height : 490,
+          minHeight : 490
+        });
+      });
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="p_prldr"></div>
+    <header class="nav">
+      <a href="/">
+        <img width="300" height="110" id="logo" src="{{asset('img/logo-header.png')}}"></img>
+      </a>
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a style="cursor: default">О факультете</a>
+          <ul class="nav-about">
+            <li><a href="faculty/general">Общая информация</a></li>
+            <li><a href="faculty/deanery">Деканат</a></li>
+            <li><a href="faculty/location">Расположение</a></li>
+            <li><a href="faculty/history">История</a></li>
+            <li><a href="#">Фотогалерея</a></li>
+            <li><a href="#">Награды</a></li>
+            <li><a href="faculty/departments">Кафедры</a></li>
+            <li><a href="faculty/student-council">Студсовет</a></li>
+          </ul>
+        </li>
+        <li><a href="/news">Новости</a></li>
+        <li><a style="cursor: default">Абитуриенту</a>
+          <ul class="nav-enrollee">
+            <li><a href="/enrollee/specialties">Специальности</a></li>
+            <li><a href="/enrollee/location">Расположение корпусов</a></li>
+            <li><a href="/enrollee/introductory-campaign">Вступительная кампания</a></li>
+            <li><a href="/enrollee/passingscores">Проходные баллы</a></li>
+          </ul>
+        </li>
+        <li><a style="cursor: default">Студенту</a>
+          <ul class="nav-student">
+            <li><a href="/student/schedule">Расписание</a></li>
+            <li><a href="/student/tempstatemnts">Шаблоны заявлений</a></li>
+            <li><a href="/student/dormitoty">Общежитие</a></li>
+            <li><a href="/student/materialaid">Материальная помощь</a></li>
+            <li><a href="/student/studprivs">Льготы для студентов</a></li>
+            <li><a href="/student/scholarships">Стипендии</a></li>
+            <li><a href="/student/paideducation">Платное обучение</a></li>
+            <li><a href="/student/payreduction">Понижение оплаты</a></li>
+            <li><a href="/student/practice">Практика</a></li>
+            <li><a href="/student/graduationproject">Дипломный проект</a></li>
+            <li><a href="/student/distribution">Распределение</a></li>
+            <li><a href="/student/militarytraining">Военная подготовка</a></li>
+          </ul>
+        </li>
+        <li><a href="/ads">Объявления</a></li>
+      </ul>
+    </header>
+
+    <div id="for-sangar-example"></div>
+    <div class='sangar-example'>
+    	<div class='sangar-content'><img src='{{asset('img/img-slide-2.jpg')}}' /></div>
+      <div class='sangar-content'><img src='{{asset('img/img-slide-1.jpg')}}' /></div>
+      <div class='sangar-content'><img src='{{asset('img/img-slide-2.jpg')}}' /></div>
+      <div class='sangar-content'><img src='{{asset('img/img-slide-1.jpg')}}' /></div>
+    	<div class='sangar-content'><img src='{{asset('img/img-slide-2.jpg')}}' /></div>
+    </div>
+
+    <div id="container">
+      <div id="container-news">
+        <div class="box-name-1"><h1>Новости</h1><h3><a href="/news">Все новости</a></h3><hr></div>
+        <div id="news">
+
+            {% if news is defined %}
+                {% for newss in news %}    
+                <a href="/news/{{newss.id}}"><div class="news-item">
+                <div class="news-img">
+                <img height="148" src="{{newss.picture}}"></img>
+                </div>
+                <div class="news-text">
+                    <h1>{{newss.title}}</h1>
+                    {% if newss.text|length <= 215 %}
+                    <p>{{newss.text|striptags|raw[:215] }} </p>
+                    {% elseif newss.text|length > 215 %}
+                        <p>{{newss.text|striptags|raw[:230] ~ '...' }} </p>
+                    {% endif %}
+                        
+                    <h2>{{newss.createdAt|localizeddate('medium', 'none', 'ru_RU', null, "d MMMM Y 'в' HH:mm ")}}</h2>
+                </div>
+                </div></a>
+                {% endfor %}
+            {% endif %}
+            
+         
+
+        </div>
+      </div>
+      <div id="container-ads">
+          <div class="box-name-1"><h1>Объявления</h1><h3><a href="/ads">Все объявления</a></h3><hr></div>
+        <div id="ads">
+          
+          {% if ads is defined %}
+              {% for advs in ads %}
+          <div class="ads-item">
+            <p>{{advs.text}}</p>
+            <h2>{{advs.createdAt|localizeddate('medium', 'none', 'ru_RU', null, "d MMMM Y 'в' HH:mm ")}}</h2>
+          </div>
+              {% endfor %}
+          {% endif %}
+
+        </div>
+      </div>
+      <div id="container-about">
+        <div class="box-name-1"><h1>О факультете</h1><hr></div>
+        <div id="about">
+          <img width="270" height="270" src="{{asset('img/photo/dekan.jpg')}}">
+            <h3>Дмитрий Викторович<br>Лихачевский</h3>
+            <h2>декан факультета</h2>
+          </img>
+          <div class="about-info">
+            <h1>О нас</h1>
+            <p>
+              Факультет компьютерного проектирования является одним из самых
+              инновационных и динамически развивающихся. Обучение студентов
+              производится с использованием самого современного оборудования и
+              программного обеспечения на базе созданных на факультете Международных,
+              учебных и научно-производственных центров и лабораторий, таких как:
+              Международный учебно-научный центр «Android Software Center», организованный
+              совместно с компанией FORTE Knowledge Иллинойской технологической ассоциации
+              (ITA) с привлечением IT - специалистов из США; учебно-научно-исследовательский
+              центр «INTES», созданный при поддержке зарубежных компаний Schneider Electric
+              (Франция) и CISCO (США), инновационной компанией «INTES»; совместной
+              учебно-научной лаборатории «Встраиваемые мобильные системы», создаваемой
+              инновационной компанией AXONIM Devices, партнером компаний Analog Devices,
+              Texas Instruments и ST Microelectronics.
+            </p>
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div id="container-feedback">
+        <div class="box-name-1"><h1>Связь с нами</h1><hr></div>
+        <div id="feedback">
+          <form method ="POST" action="{{path('home')}}">
+          <h1>Отправить сообщение</h1>
+          <input name ="sendername" required placeholder="Ваше имя" >
+          <input name ="sendermail" type="email" required placeholder="E-mail для обратной связи" >
+          <textarea name ="text" required placeholder="Текст сообщения" ></textarea>
+          <button type="submit">Отправить</button>
+          </form>
+        </div>
+        <div id="vk-feedback">
+          <h1>Мнения</h1>
+          <div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 5, width: "423", height: "500", attach: false});
+</script>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="box-name-1"><h1></h1><hr></div>
+        <div class="footer-link">
+          <a href="/">
+            <img width="328" height="328" src="{{asset('img/logo-footer.jpg')}}"></img>
+          </a>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li class="hlink">О факультете</li>
+            <li>общая информация</li>
+            <li>деканат</li>
+            <li>расположение</li>
+            <li>история</li>
+            <li>фотогалерея</li>
+            <li>награды</li>
+            <li>кафедры</li>
+            <li>студсовет</li>
+          </ul>
+          <ul>
+            <li class="hlink">Новости</li>
+          </ul>
+          <ul>
+            <li class="hlink">Абитуриенту</li>
+            <li>специальности</li>
+            <li>расположение корпусов</li>
+            <li>вступительная кампания</li>
+            <li>проходные баллы</li>
+            </ul>
+          <ul>
+            <li class="hlink">Студенту</li>
+            <a href="schedule"><li>расписание</li></a>
+            <li>шаблоны заявлений</li>
+            <li>общежитие</li>
+            <li>материальная помощь</li>
+            <li>льготы для студентов</li>
+            <li>стипендии</li>
+            <li>платное обучение</li>
+            <li>понижение оплаты</li>
+            <li>практика</li>
+            <li>дипломный проект</li>
+            <li>распределение</li>
+            <li>военная подготовка</li>
+          </ul>
+          <ul>
+            <li class="hlink">Объявления</li>
+          </ul>
+          <div class="footer-info">
+            <p>ЦИИР БГУИР, 2002-2016</p>
+            <h3>Все права защищены</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(window).on('load', function () { var $preloader = $('#p_prldr'); $preloader.delay().fadeOut('slow');});
+    </script>
+  </body>
+</html>

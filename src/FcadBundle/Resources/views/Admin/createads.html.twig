@@ -1,0 +1,13 @@
+{% extends "FcadBundle:Admin:layout.html.twig" %}
+
+{% block containerUsers %}
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h2 class="sub-header">Новое объявление</h2> 
+        {% if form is defined %}{{ form_start(form, {'method': 'post', 'action': path('createads')}) }}
+            {{ form_widget(form) }}
+        {% endif %}
+        {% if message is defined %}
+            <font color="green">{{message}}</font>
+        {% endif %}
+    </div>
+{% endblock %}

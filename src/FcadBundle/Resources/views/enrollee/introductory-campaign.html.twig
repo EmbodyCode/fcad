@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Проходные баллы</title>
+    <link rel="stylesheet" href="{{asset('css/reset.css')}}">
+    <link rel="stylesheet" href="{{asset('css/article.css')}}">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="p_prldr"></div>
+    <header class="nav">
+      <a href="/">
+        <img width="300" height="110" id="logo" src="{{asset('img/logo-header-dark.png')}}"></img>
+      </a>
+      <ul>
+        <li><a href="/" class="noborder">Главная</a></li>
+        <li><a href="#">О факультете</a>
+          <ul class="nav-about">
+            <li><a href="/faculty/general">Общая информация</a></li>
+            <li><a href="/faculty/deanery">Деканат</a></li>
+            <li><a href="/faculty/location">Расположение</a></li>
+            <li><a href="/faculty/history">История</a></li>
+            <li><a href="#">Фотогалерея</a></li>
+            <li><a href="#">Награды</a></li>
+            <li><a href="/faculty/departments">Кафедры</a></li>
+            <li><a href="/faculty/student-council">Студсовет</a></li>
+          </ul>
+        </li>
+        <li><a href="/news" class="noborder">Новости</a></li>
+        <li><a href="#">Абитуриенту</a>
+          <ul class="nav-enrollee">
+            <li><a href="/enrollee/specialties">Специальности</a></li>
+            <li><a href="/enrollee/location">Расположение корпусов</a></li>
+            <li><a href="/enrollee/introductory-campaign">Вступительная кампания</a></li>
+            <li><a href="/enrollee/passingscores">Проходные баллы</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Студенту</a>
+          <ul class="nav-student">
+            <li><a href="/student/schedule">Расписание</a></li>
+            <li><a href="/student/tempstatemnts">Шаблоны заявлений</a></li>
+            <li><a href="/student/dormitoty">Общежитие</a></li>
+            <li><a href="/student/materialaid">Материальная помощь</a></li>
+            <li><a href="/student/studprivs">Льготы для студентов</a></li>
+            <li><a href="/student/scholarships">Стипендии</a></li>
+            <li><a href="/student/paideducation">Платное обучение</a></li>
+            <li><a href="/student/payreduction">Понижение оплаты</a></li>
+            <li><a href="/student/practice">Практика</a></li>
+            <li><a href="/student/graduationproject">Дипломный проект</a></li>
+            <li><a href="/student/distribution">Распределение</a></li>
+            <li><a href="/student/militarytraining">Военная подготовка</a></li>
+          </ul>
+        </li>
+        <li><a href="/ads" class="noborder">Объявления</a></li>
+      </ul>
+    </header>
+    <div id="container">
+      <div id="container-article">
+        <div class="box-name-1"><h1>Вступительная кампания</h1><hr></div>
+        <div id="article">
+          <p>Поступление в высшее учебное заведение – важное и волнительное событие в жизни многих.
+            Для более точного представления о процессе и меньшей вероятности запутаться выделены
+            основные этапы вступительной кампании:
+            <ul class="list" style="list-style: decimal">
+              <li>Определиться с ВУЗом и составить примерный список желаемых специальностей;</li>
+              <li>Проанализировать необходимые требования для поступления на выбранные специальности
+                и приступить к подготовке;</li>
+              <li>Пройти репетиционное тестирование (обязательно), чтобы иметь понятие, как проходит
+                ЦТ и какими знаниями вы владеете на самом деле. РТ помогает морально подготовиться к
+                ЦТ;</li>
+              <li>Регистрация на ЦТ;</li>
+              <li>Централизованное тестирование;</li>
+              <li>Итак, мы имеем результаты, а значит, идем в университет для подачи документов.
+                Сроки проведения приёмной комиссии можно узнать на сайте;</li>
+              <li>Во время вступительной кампании в университете работает много волонтёров, которые
+                не оставят вас без внимания, окажут помощь и посоветуют. Пишем заявление, проходим
+                все «препятствия» (с ними помогут волонтёры) и ждём результатов. Для удобства стоит
+                оформить электронное заявление, распечатать его и с ним приехать, чтобы не тратить время.</li>
+            </ul></p>
+        </div>
+      </div>
+      <div id="container-also">
+        <div class="box-name-1"><h1>Абитуриенту</h1><hr></div>
+        <div id="also">
+          <div class="also-item">
+            <a href="specialties"><p>Специальности</p></a>
+            <a href="location"><p>Расположение корпусов</p></a>
+            <a href="introductory-campaign"><p class="selected">Вступительная кампания</p></a>
+            <a href="passingscores"><p>Проходные баллы</p></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="box-name-1"><h1></h1><hr></div>
+        <div class="footer-link">
+          <a href="/">
+            <img width="328" height="328" src="{{asset('img/logo-footer.jpg')}}"></img>
+          </a>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li class="hlink">О факультете</li>
+            <li>общая информация</li>
+            <li>деканат</li>
+            <li>расположение</li>
+            <li>история</li>
+            <li>фотогалерея</li>
+            <li>награды</li>
+            <li>кафедры</li>
+            <li>студсовет</li>
+          </ul>
+          <ul>
+            <li class="hlink">Новости</li>
+          </ul>
+          <ul>
+            <li class="hlink">Абитуриенту</li>
+            <li>специальности</li>
+            <li>расположение корпусов</li>
+            <li>вступительная кампания</li>
+            <li>проходные баллы</li>
+            </ul>
+          <ul>
+            <li class="hlink">Студенту</li>
+            <li>расписание</li>
+            <li>шаблоны заявлений</li>
+            <li>общежитие</li>
+            <li>материальная помощь</li>
+            <li>льготы для студентов</li>
+            <li>стипендии</li>
+            <li>платное обучение</li>
+            <li>понижение оплаты</li>
+            <li>практика</li>
+            <li>дипломный проект</li>
+            <li>распределение</li>
+            <li>военная подготовка</li>
+          </ul>
+          <ul>
+            <li class="hlink">Объявления</li>
+          </ul>
+          <div class="footer-info">
+            <p>ЦИИР БГУИР, 2002-2016</p>
+            <h3>Все права защищены</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(window).on('load', function () { var $preloader = $('#p_prldr'); $preloader.delay().fadeOut('slow');});
+    </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Авторизация</title>
+        <link rel="stylesheet" href="{{asset('css/auth.css')}}">
+    </head>
+    <body>
+        <div class="login-form">
+            <form action="{{ path("fos_user_security_check") }}" method="post">
+                {% if csrf_token %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                {% endif %}
+                <input type="text" placeholder="Учетная запись" id="username" name="_username" value="{{ last_username }}" required="required">
+                <input type="password" placeholder="Пароль" id="password" name="_password" required="required">
+                <button type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}">Войти</button>
+            </form>
+            {% if error %}
+                <div class="error">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+        </div>
+            
+        <p>Поддержка: +375 (29) 871-44-00, +375 (44) 484-46-26</p>
+    </body>
+</html>
+

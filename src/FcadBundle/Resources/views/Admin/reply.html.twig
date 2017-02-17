@@ -1,0 +1,12 @@
+{% extends "FcadBundle:Admin:layout.html.twig" %}
+
+{% block containerUsers %}
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h2 class="sub-header">Ответ на обращение от {{messages.sendername}}</h2> 
+        <form action="{{path('replymsg', { 'id' : id } )}}" method="POST">
+        <input name="sendermail" value="{{messages.senderemail}}" type="hidden">
+        <textarea style="width: 100%; height: 300px" name="text"></textarea>
+        <input type="submit" value="Отправить">
+        </form>
+    </div>
+{% endblock %}

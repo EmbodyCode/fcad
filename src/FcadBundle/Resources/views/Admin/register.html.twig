@@ -1,0 +1,21 @@
+{% extends "FcadBundle:Admin:layout.html.twig" %}
+
+{% block containerUsers %}
+    {% trans_default_domain "FOSUserBundle" %}
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h2 class="sub-header">Регистрация нового пользователя</h2>
+        {% if form is defined %}
+        {{ form_start(form, {'method': 'post', 'action': path('registration')}) }}
+        {{ form_widget(form) }}
+        {% endif %}
+
+        <h2 class="sub-header"></h2>
+        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+        <h2 class="sub-header"></h2>
+        {% if message is defined %}
+            {{ message }}
+        {% endif %}
+
+
+    </div>
+{% endblock %}

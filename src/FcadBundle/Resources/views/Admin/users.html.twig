@@ -1,0 +1,44 @@
+{% extends "FcadBundle:Admin:layout.html.twig" %}
+
+{% block containerUsers %}
+  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                   <h2 class="sub-header">Пользователи</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Управление</th>
+                                    <th>Имя пользователя</th>
+                                    <th>Электронный адрес</th>
+                                    <th>Последний вход</th>
+                                    <th>Роль</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for user in users %}
+                                <tr> 
+                                    <td><a href="/admin/users/edit/{{user.id}}"><input type="button" value="Редактировать"></a>
+                                        <a href="/admin/delete/{{user.username}}">
+                                            <input type="button" value ="Удалить">
+                                        </a></td>
+                                    <td>{{user.username}}</td>
+                                    <td>{{user.email}}</td>
+                                    <td>{{user.lastLogin |date('Y-m-d H:i:s') }}</td>
+                                    {% for role in user.roles %}
+                                        {% if role == "ROLE_SUPER_ADMIN" %}
+                                            <td>Декан</td>
+                                        {% endif %}
+                                        {% if role == "ROLE_ADMIN" %}
+                                            <td>Сотрудник деканата</td>
+                                        {% endif %}
+                                        {% if role == "ROLE_USER" %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+{% endblock %}

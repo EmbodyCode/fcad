@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Расположение</title>
+    <link rel="stylesheet" href="{{asset('css/reset.css')}}">
+    <link rel="stylesheet" href="{{asset('css/article.css')}}">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="p_prldr"></div>
+    <header class="nav">
+      <a href="/">
+        <img width="300" height="110" id="logo" src="{{asset('img/logo-header-dark.png')}}"></img>
+      </a>
+      <ul>
+        <li><a href="/" class="noborder">Главная</a></li>
+        <li><a href="#">О факультете</a>
+          <ul class="nav-about">
+            <li><a href="general">Общая информация</a></li>
+            <li><a href="deanery">Деканат</a></li>
+            <li><a href="location">Расположение</a></li>
+            <li><a href="history">История</a></li>
+            <li><a href="#">Фотогалерея</a></li>
+            <li><a href="#">Награды</a></li>
+            <li><a href="departments">Кафедры</a></li>
+            <li><a href="student-council">Студсовет</a></li>
+          </ul>
+        </li>
+        <li><a href="/news" class="noborder">Новости</a></li>
+        <li><a href="#">Абитуриенту</a>
+          <ul class="nav-enrollee">
+            <li><a href="/enrollee/specialties">Специальности</a></li>
+            <li><a href="/enrollee/location">Расположение корпусов</a></li>
+            <li><a href="/enrollee/introductory-campaign">Вступительная кампания</a></li>
+            <li><a href="/enrollee/passingscores">Проходные баллы</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Студенту</a>
+          <ul class="nav-student">
+            <li><a href="/student/schedule">Расписание</a></li>
+            <li><a href="/student/tempstatemnts">Шаблоны заявлений</a></li>
+            <li><a href="/student/dormitoty">Общежитие</a></li>
+            <li><a href="/student/materialaid">Материальная помощь</a></li>
+            <li><a href="/student/studprivs">Льготы для студентов</a></li>
+            <li><a href="/student/scholarships">Стипендии</a></li>
+            <li><a href="/student/paideducation">Платное обучение</a></li>
+            <li><a href="/student/payreduction">Понижение оплаты</a></li>
+            <li><a href="/student/practice">Практика</a></li>
+            <li><a href="/student/graduationproject">Дипломный проект</a></li>
+            <li><a href="/student/distribution">Распределение</a></li>
+            <li><a href="/student/militarytraining">Военная подготовка</a></li>
+          </ul>
+        </li>
+        <li><a href="/ads" class="noborder">Объявления</a></li>
+      </ul>
+    </header>
+    <div id="container">
+      <div id="container-article">
+        <div class="box-name-1"><h1>Расположение</h1><hr></div>
+        <div id="article">
+          <p>Факультет компьютерного проектирования расположен по адресу:<br>
+            ул. П. Бровки, 4, 2-й корпус БГУИР, 3 этаж, каб. 308.</p>
+          <h1>Расположение корпусов на интерактивной карте</h1>
+          <div class="other-box">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3UOqBDeD7AqmhaKqIU-tApwTZp-iA-9X&amp;width=773&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+          </div>
+        </div>
+      </div>
+      <div id="container-also">
+        <div class="box-name-1"><h1>О факультете</h1><hr></div>
+        <div id="also">
+          <div class="also-item">
+            <a href="general"><p>Общая информация</p></a>
+            <a href="deanery"><p>Деканат</p></a>
+            <a href="location"><p class="selected">Расположение</p></a>
+            <a href="history"><p>История</p></a>
+            <a href=""><p>Фотогалерея</p></a>
+            <a href=""><p>Награды</p></a>
+            <a href="departments"><p>Кафедры</p></a>
+            <a href="student-council"><p>Студсовет</p></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="box-name-1"><h1></h1><hr></div>
+        <div class="footer-link">
+          <a href="/">
+            <img width="328" height="328" src="{{asset('img/logo-footer.jpg')}}"></img>
+          </a>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li class="hlink">О факультете</li>
+            <li>общая информация</li>
+            <li>деканат</li>
+            <li>расположение</li>
+            <li>история</li>
+            <li>фотогалерея</li>
+            <li>награды</li>
+            <li>кафедры</li>
+            <li>студсовет</li>
+          </ul>
+          <ul>
+            <li class="hlink">Новости</li>
+          </ul>
+          <ul>
+            <li class="hlink">Абитуриенту</li>
+            <li>специальности</li>
+            <li>расположение корпусов</li>
+            <li>вступительная кампания</li>
+            <li>проходные баллы</li>
+            </ul>
+          <ul>
+            <li class="hlink">Студенту</li>
+            <li>расписание</li>
+            <li>шаблоны заявлений</li>
+            <li>общежитие</li>
+            <li>материальная помощь</li>
+            <li>льготы для студентов</li>
+            <li>стипендии</li>
+            <li>платное обучение</li>
+            <li>понижение оплаты</li>
+            <li>практика</li>
+            <li>дипломный проект</li>
+            <li>распределение</li>
+            <li>военная подготовка</li>
+          </ul>
+          <ul>
+            <li class="hlink">Объявления</li>
+          </ul>
+          <div class="footer-info">
+            <p>ЦИИР БГУИР, 2002-2016</p>
+            <h3>Все права защищены</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(window).on('load', function () { var $preloader = $('#p_prldr'); $preloader.delay().fadeOut('slow');});
+    </script>
+    </body>
+</html>

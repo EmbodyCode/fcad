@@ -1,0 +1,29 @@
+{% extends "FcadBundle:Admin:layout.html.twig" %}
+
+{% block containerUsers %}
+  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                   <h2 class="sub-header">Список новостей</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Название статьи</th>
+                                    <th>Действия</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for newss in news %}
+                                <tr>
+                                    <td>{{newss.title}}</td>
+                                    <td><a href="/admin/editnews/{{newss.id}}"><input type="button" value="Редактировать"></a>
+                                        <a href="/admin/deletenews/{{newss.id}}">
+                                            <input type="button" value ="Удалить">
+                                        </a></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+{% endblock %}

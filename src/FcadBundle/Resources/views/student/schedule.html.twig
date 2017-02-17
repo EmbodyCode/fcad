@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Расписание</title>
+    <link rel="stylesheet" href="{{asset('css/reset.css')}}">
+    <link rel="stylesheet" href="{{asset('css/article.css')}}">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="p_prldr"></div>
+    <header class="nav">
+      <a href="#">
+        <img width="300" height="110" id="logo" src="{{asset('img/logo-header-dark.png')}}"></img>
+      </a>
+      <ul>
+        <li><a href="/" class="noborder">Главная</a></li>
+        <li><a href="#">О факультете</a>
+          <ul class="nav-about">
+            <li><a href="/faculty/general">Общая информация</a></li>
+            <li><a href="/faculty/deanery">Деканат</a></li>
+            <li><a href="/faculty/location">Расположение</a></li>
+            <li><a href="/faculty/history">История</a></li>
+            <li><a href="#">Фотогалерея</a></li>
+            <li><a href="#">Награды</a></li>
+            <li><a href="/faculty/departments">Кафедры</a></li>
+            <li><a href="/faculty/student-council">Студсовет</a></li>
+          </ul>
+        </li>
+        <li><a href="/news" class="noborder">Новости</a></li>
+        <li><a href="#">Абитуриенту</a>
+          <ul class="nav-enrollee">
+            <li><a href="/enrollee/specialties">Специальности</a></li>
+            <li><a href="/enrollee/location">Расположение корпусов</a></li>
+            <li><a href="/enrollee/introductory-campaign">Вступительная кампания</a></li>
+            <li><a href="/enrollee/passingscores">Проходные баллы</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Студенту</a>
+          <ul class="nav-student">
+            <li><a href="/student/schedule">Расписание</a></li>
+            <li><a href="/student/tempstatemnts">Шаблоны заявлений</a></li>
+            <li><a href="/student/dormitoty">Общежитие</a></li>
+            <li><a href="/student/materialaid">Материальная помощь</a></li>
+            <li><a href="/student/studprivs">Льготы для студентов</a></li>
+            <li><a href="/student/scholarships">Стипендии</a></li>
+            <li><a href="/student/paideducation">Платное обучение</a></li>
+            <li><a href="/student/payreduction">Понижение оплаты</a></li>
+            <li><a href="/student/practice">Практика</a></li>
+            <li><a href="/student/graduationproject">Дипломный проект</a></li>
+            <li><a href="/student/distribution">Распределение</a></li>
+            <li><a href="/student/militarytraining">Военная подготовка</a></li>
+          </ul>
+        </li>
+        <li><a href="/ads" class="noborder">Объявления</a></li>
+      </ul>
+    </header>
+
+
+    <div id="container">
+      <div id="container-article">
+        <div class="box-name-1"><h1>Расписание</h1><hr></div>
+        <div id="article">
+          <p>С расписанием занятий можно ознакомиться на стенде возле деканата нашего
+          факультета – во 2-ом корпусе БГУИР (ул. П. Бровки, 4) на третьем этаже.</p>
+          <p>Также студенты и преподаватели БГУИР могут ознакомиться со следующими расписаниями онлайн:
+            <ul class="list" style="list-style: square">
+              <li><a href="https://students.bsuir.by/schedule/schedule.xhtml">Расписание групп</a></li>
+              <li><a href="http://www.bsuir.by/schedule/scheduleEmployee.xhtml">Расписание преподавателей</a></li>
+              <li><a href="http://www.bsuir.by/schedule/scheduleDepartment.xhtml">Расписание кафедр</a></li>
+              <li><a href="http://www.bsuir.by/m/12_100229_1_107236.docx">График дополнительных занятий по математике и физике для первого курса</a></li>
+            </ul>
+          </p>
+          <p>Дополнительно для ознакомления с расписанием можно установить соответствующее приложение на смартфон
+            под управлением <a href="https://itunes.apple.com/ru/app/bsuir-schedule/id944151090?l=en">iOS</a> или <a href="https://play.google.com/store/apps/details?id=by.bsuir.schedule">Android</a>.</p>
+        </div>
+
+      </div>
+      <div id="container-also">
+        <div class="box-name-1"><h1>Студенту</h1><hr></div>
+        <div id="also">
+          <div class="also-item">
+            <a href="schedule"><p class="selected">Расписание</p></a>
+            <a href="tempstatemnts"><p>Шаблоны заявлений</p></a>
+            <a href="dormitoty"><p>Общежитие</p></a>
+            <a href="materialaid"><p>Материальная помощь</p></a>
+            <a href="studprivs"><p>Льготы для студентов</p></a>
+            <a href="scholarships"><p>Стипендии</p></a>
+            <a href="paideducation"><p>Платное обучение</p></a>
+            <a href="payreduction"><p>Понижение оплаты</p></a>
+            <a href="practice"><p>Практика</p></a>
+            <a href="graduationproject"><p>Дипломный проект</p></a>
+            <a href="distribution"><p>Распределение</p></a>
+            <a href="militarytraining"><p>Военная подготовка</p></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="box-name-1"><h1></h1><hr></div>
+        <div class="footer-link">
+          <a href="/">
+            <img width="328" height="328" src="{{asset('img/logo-footer.jpg')}}"></img>
+          </a>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li class="hlink">О факультете</li>
+            <li>общая информация</li>
+            <li>деканат</li>
+            <li>расположение</li>
+            <li>история</li>
+            <li>фотогалерея</li>
+            <li>награды</li>
+            <li>кафедры</li>
+            <li>студсовет</li>
+          </ul>
+          <ul>
+            <li class="hlink">Новости</li>
+          </ul>
+          <ul>
+            <li class="hlink">Абитуриенту</li>
+            <li>специальности</li>
+            <li>расположение корпусов</li>
+            <li>вступительная кампания</li>
+            <li>проходные баллы</li>
+            </ul>
+          <ul>
+            <li class="hlink">Студенту</li>
+            <li>расписание</li>
+            <li>шаблоны заявлений</li>
+            <li>общежитие</li>
+            <li>материальная помощь</li>
+            <li>льготы для студентов</li>
+            <li>стипендии</li>
+            <li>платное обучение</li>
+            <li>понижение оплаты</li>
+            <li>практика</li>
+            <li>дипломный проект</li>
+            <li>распределение</li>
+            <li>военная подготовка</li>
+          </ul>
+          <ul>
+            <li class="hlink">Объявления</li>
+          </ul>
+          <div class="footer-info">
+            <p>ЦИИР БГУИР, 2002-2016</p>
+            <h3>Все права защищены</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(window).on('load', function () { var $preloader = $('#p_prldr'); $preloader.delay().fadeOut('slow');});
+    </script>
+  </body>
+</html>

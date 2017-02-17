@@ -1,0 +1,80 @@
+* {
+  font-family: Arial;
+}
+
+html, body {
+  background: #eaeaea;
+  margin: 0;
+}
+
+.login-form {
+  position: absolute;
+  left: calc(50% - 166px);
+  top: calc(50% - 83px);
+  width: 330px;
+  height: 165px;
+  border: 1px solid #ddd;
+}
+
+input {
+  width: 278px;
+  height: 13px;
+  padding: 10px;
+  margin: 15px;
+  margin-bottom: 0;
+  border: 0;
+  outline: none;
+  background: #eaeaea;
+  border: 1px solid #ddd;
+  color: #888;
+  font-size: 12px;
+}
+
+input:hover, input:focus {
+  background: rgba(255,255,255,0.5);
+  -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+       -o-transition: all .2s ease;
+          transition: all .2s ease;
+}
+
+button {
+  width: 300px;
+  height: 35px;
+  margin: 15px;
+  border: 0;
+  background: #ddd;
+  color: #888;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background: #8298a8;
+  -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+       -o-transition: all .2s ease;
+          transition: all .2s ease;
+  color: white;
+}
+
+.error {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+    text-align: center;
+}
+
+p {
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  left: calc(50% - 250px);
+  top: calc(100% - 50px);
+  font-size: 13px;
+  color: #888;
+}

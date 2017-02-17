@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Специальности</title>
+    <link rel="stylesheet" href="{{asset('css/reset.css')}}">
+    <link rel="stylesheet" href="{{asset('css/article.css')}}">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="p_prldr"></div>
+    <header class="nav">
+      <a href="/">
+        <img width="300" height="110" id="logo" src="{{asset('img/logo-header-dark.png')}}"></img>
+      </a>
+      <ul>
+        <li><a href="/" class="noborder">Главная</a></li>
+        <li><a href="#">О факультете</a>
+          <ul class="nav-about">
+            <li><a href="/faculty/general">Общая информация</a></li>
+            <li><a href="/faculty/deanery">Деканат</a></li>
+            <li><a href="/faculty/location">Расположение</a></li>
+            <li><a href="/faculty/history">История</a></li>
+            <li><a href="#">Фотогалерея</a></li>
+            <li><a href="#">Награды</a></li>
+            <li><a href="/faculty/departments">Кафедры</a></li>
+            <li><a href="/faculty/student-council">Студсовет</a></li>
+          </ul>
+        </li>
+        <li><a href="/news" class="noborder">Новости</a></li>
+        <li><a href="#">Абитуриенту</a>
+          <ul class="nav-enrollee">
+            <li><a href="/enrollee/specialties">Специальности</a></li>
+            <li><a href="/enrollee/location">Расположение корпусов</a></li>
+            <li><a href="/enrollee/introductory-campaign">Вступительная кампания</a></li>
+            <li><a href="/enrollee/passingscores">Проходные баллы</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Студенту</a>
+          <ul class="nav-student">
+            <li><a href="/student/schedule">Расписание</a></li>
+            <li><a href="/student/tempstatemnts">Шаблоны заявлений</a></li>
+            <li><a href="/student/dormitoty">Общежитие</a></li>
+            <li><a href="/student/materialaid">Материальная помощь</a></li>
+            <li><a href="/student/studprivs">Льготы для студентов</a></li>
+            <li><a href="/student/scholarships">Стипендии</a></li>
+            <li><a href="/student/paideducation">Платное обучение</a></li>
+            <li><a href="/student/payreduction">Понижение оплаты</a></li>
+            <li><a href="/student/practice">Практика</a></li>
+            <li><a href="/student/graduationproject">Дипломный проект</a></li>
+            <li><a href="/student/distribution">Распределение</a></li>
+            <li><a href="/student/militarytraining">Военная подготовка</a></li>
+          </ul>
+        </li>
+        <li><a href="/ads" class="noborder">Объявления</a></li>
+      </ul>
+    </header>
+    <div id="container">
+      <div id="container-article">
+        <div class="box-name-1"><h1>Специальности</h1><hr></div>
+        <div id="article">
+          <a href="/enrollee/epmoitspecialty">
+            <div class="other-box block-list" style="background: url({{asset('img/specialties/psycho.svg')}}) no-repeat; background-size: 55px; background-position: 21px 50%;">
+              <div class="dep-name">Инженерно-психологическое обеспечение информационных технологий</div>
+              <div class="dep-desc">В настоящее время в состав рабочих групп, осуществляющих разработку и эксплуатацию информационных систем, входят высокооплачиваемые юзабилити-специалисты, т.е. специалисты в области человеческого фактора, имеющие глубокие знания в информатике и психологии.</div>
+            </div>
+          </a>
+          <a href="/enrollee/isatieisspecialty">
+            <div class="other-box block-list" style="background: url({{asset('img/specialties/factory.svg')}}) no-repeat; background-size: 55px; background-position: 21px 50%;">
+              <div class="dep-name">Информационные системы и технологии в обеспечении промышленной безопасности</div>
+              <div class="dep-desc">Инженер-системотехник подготовлен для работы по родственным специальностям: инженер-программист, инженер по информационным технологиям, системный администратор, специалист по сопровождению и тестированию ПО, системный архитектор, системный аналитик, бизнес-аналитик.</div>
+            </div>
+          </a>
+          <a href="/enrollee/medelspecialty">
+            <div class="other-box block-list" style="background: url({{asset('img/specialties/med.svg')}}) no-repeat; background-size: 55px; background-position: 21px 50%;">
+              <div class="dep-name">Медицинская электроника</div>
+              <div class="dep-desc">Студенты специальности Медицинская электроника, находящейся на стыке информатики, физики, биологии и медицины, за время обучения получают умения и навыки, которые позволят им решить важнейшие задачи медицины и электронной техники.</div>
+            </div>
+          </a>
+          <a href="/enrollee/macadspecialty">
+            <div class="other-box block-list" style="background: url({{asset('img/specialties/radio.svg')}}) no-repeat; background-size: 55px; background-position: 21px 50%;">
+              <div class="dep-name">Моделирование и компьютерное проектирование радиоэлектронных средств</div>
+              <div class="dep-desc">Специфика специальности состоит в разработке и использовании прикладного программного обеспечения для моделирования физических процессов, протекающих в РЭС, и проектирования современных электронных систем.</div>
+            </div>
+          </a>
+          <a href="/enrollee/pmsspecialty">
+            <div class="other-box block-list" style="background: url({{asset('img/specialties/mobile.svg')}}) no-repeat; background-size: 55px; background-position: 21px 50%;">
+              <div class="dep-name">Программируемые мобильные системы</div>
+              <div class="dep-desc">Стремительный рост популярности во всем мире мобильной электроники диктует необходимость подготовки специалистов, которые смогли бы проектировать мобильные системы и разрабатывать к ним соответствующие приложения.</div>
+            </div>
+          </a>
+          <a href="/enrollee/seceosspecialty">
+            <div class="other-box block-list" style="background: url({{asset('img/specialties/optic.svg')}}) no-repeat; background-size: 55px; background-position: 21px 50%;">
+              <div class="dep-name">Программно-управляемые электронно-оптические системы</div>
+              <div class="dep-desc">Подготовка инженеров по специальности «Программно-управляемые электронно-оптические системы» направлена на разработку, программирование, отладку и сопровождение сложных программно-управляемых систем и комплексов, в состав которых входят прецизионные механизмы, устройства очувствления и технического зрения, исполнительные органы и системы автоматизации.</div>
+            </div>
+          </a>
+          <a href="/enrollee/dapopspecialty">
+            <div class="other-box block-list" style="background: url({{asset('img/specialties/control.svg')}}) no-repeat; background-size: 55px; background-position: 21px 50%;">
+              <div class="dep-name">Проектирование и производство программно-управляемых электронных средств</div>
+              <div class="dep-desc">Многопрофильная специальность, связанная с компьютерным проектированием многофункциональных электронных средств, включая компьютеры, видеосистемы, смартфоны, системы спутниковой навигации и др., имеющих в своей основе интегральные схемы и полупроводниковые приборы.</div>
+            </div>
+          </a>
+          <a href="/enrollee/isatbmspecialty">
+            <div class="other-box block-list" style="background: url({{asset('img/specialties/business.svg')}}) no-repeat; background-size: 55px; background-position: 21px 50%;">
+              <div class="dep-name">Информационные системы и технологии (в бизнес-менеджменте)</div>
+              <div class="dep-desc">Качество и эффективность управления компанией во многом зависит от уровня информационного обеспечения бизнес-менеджмента всех уровней. Существование и развитие любого субъекта бизнеса происходят в условиях обостряющейся конкуренции.</div>
+            </div>
+          </a>
+          <a href="/enrollee/ecsspecialty">
+            <div class="other-box block-list" style="background: url({{asset('img/specialties/secur.svg')}}) no-repeat; background-size: 55px; background-position: 21px 50%;">
+              <div class="dep-name">Электронные системы безопасности</div>
+              <div class="dep-desc">В современных условиях рынок безопасности требует новой системы подготовки специалистов в области безопасности. Многофункциональные интеллектуальные системы безопасности, построенные на IP и IT-технологиях, становятся наиболее востребованными, вытесняя традиционные системы.</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="container-also">
+        <div class="box-name-1"><h1>Абитуриенту</h1><hr></div>
+        <div id="also">
+          <div class="also-item">
+            <a href="specialties"><p class="selected">Специальности</p></a>
+            <a href="location"><p>Расположение корпусов</p></a>
+            <a href="introductory-campaign"><p>Вступительная кампания</p></a>
+            <a href="passingscores"><p>Проходные баллы</p></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="box-name-1"><h1></h1><hr></div>
+        <div class="footer-link">
+          <a href="/">
+            <img width="328" height="328" src="{{asset('img/logo-footer.jpg')}}"></img>
+          </a>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li class="hlink">О факультете</li>
+            <li>общая информация</li>
+            <li>деканат</li>
+            <li>расположение</li>
+            <li>история</li>
+            <li>фотогалерея</li>
+            <li>награды</li>
+            <li>кафедры</li>
+            <li>студсовет</li>
+          </ul>
+          <ul>
+            <li class="hlink">Новости</li>
+          </ul>
+          <ul>
+            <li class="hlink">Абитуриенту</li>
+            <li>специальности</li>
+            <li>расположение корпусов</li>
+            <li>вступительная кампания</li>
+            <li>проходные баллы</li>
+            </ul>
+          <ul>
+            <li class="hlink">Студенту</li>
+            <li>расписание</li>
+            <li>шаблоны заявлений</li>
+            <li>общежитие</li>
+            <li>материальная помощь</li>
+            <li>льготы для студентов</li>
+            <li>стипендии</li>
+            <li>платное обучение</li>
+            <li>понижение оплаты</li>
+            <li>практика</li>
+            <li>дипломный проект</li>
+            <li>распределение</li>
+            <li>военная подготовка</li>
+          </ul>
+          <ul>
+            <li class="hlink">Объявления</li>
+          </ul>
+          <div class="footer-info">
+            <p>ЦИИР БГУИР, 2002-2016</p>
+            <h3>Все права защищены</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(window).on('load', function () { var $preloader = $('#p_prldr'); $preloader.delay().fadeOut('slow');});
+    </script>
+    </body>
+</html>

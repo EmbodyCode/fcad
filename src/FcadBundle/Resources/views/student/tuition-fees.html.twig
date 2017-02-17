@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Платное обучение</title>
+    <link rel="stylesheet" href="{{asset('css/reset.css')}}">
+    <link rel="stylesheet" href="{{asset('css/article.css')}}">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="p_prldr"></div>
+    <header class="nav">
+      <a href="#">
+        <img width="300" height="110" id="logo" src="{{asset('img/logo-header-dark.png')}}"></img>
+      </a>
+      <ul>
+        <li><a href="/" class="noborder">Главная</a></li>
+        <li><a href="#">О факультете</a>
+          <ul class="nav-about">
+            <li><a href="/faculty/general">Общая информация</a></li>
+            <li><a href="/faculty/deanery">Деканат</a></li>
+            <li><a href="/faculty/location">Расположение</a></li>
+            <li><a href="/faculty/history">История</a></li>
+            <li><a href="#">Фотогалерея</a></li>
+            <li><a href="#">Награды</a></li>
+            <li><a href="/faculty/departments">Кафедры</a></li>
+            <li><a href="/faculty/student-council">Студсовет</a></li>
+          </ul>
+        </li>
+        <li><a href="/news" class="noborder">Новости</a></li>
+        <li><a href="#">Абитуриенту</a>
+          <ul class="nav-enrollee">
+            <li><a href="/enrollee/specialties">Специальности</a></li>
+            <li><a href="/enrollee/location">Расположение корпусов</a></li>
+            <li><a href="/enrollee/introductory-campaign">Вступительная кампания</a></li>
+            <li><a href="/enrollee/passingscores">Проходные баллы</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Студенту</a>
+          <ul class="nav-student">
+            <li><a href="/student/schedule">Расписание</a></li>
+            <li><a href="/student/tempstatemnts">Шаблоны заявлений</a></li>
+            <li><a href="/student/dormitoty">Общежитие</a></li>
+            <li><a href="/student/materialaid">Материальная помощь</a></li>
+            <li><a href="/student/studprivs">Льготы для студентов</a></li>
+            <li><a href="/student/scholarships">Стипендии</a></li>
+            <li><a href="/student/paideducation">Платное обучение</a></li>
+            <li><a href="/student/payreduction">Понижение оплаты</a></li>
+            <li><a href="/student/practice">Практика</a></li>
+            <li><a href="/student/graduationproject">Дипломный проект</a></li>
+            <li><a href="/student/distribution">Распределение</a></li>
+            <li><a href="/student/militarytraining">Военная подготовка</a></li>
+          </ul>
+        </li>
+        <li><a href="/ads" class="noborder">Объявления</a></li>
+      </ul>
+    </header>
+
+
+    <div id="container">
+      <div id="container-article">
+        <div class="box-name-1"><h1>Платное обучение</h1><hr></div>
+        <div id="article">
+          <h1>Сроки оплаты</h1>
+          <p>Студентам 1 курса первую часть оплаты необходимо произвести до 31 августа 2016 года, студентам 2-6 курсов - до 15 сентября 2016 года.</p>
+          <h1>Пеня</h1>
+          <p>При нарушении сроков оплаты начисляется пеня в размере 1% от недоплаченной суммы за каждый день просрочки, не считая дня платежа.</p>
+          <h1>Первая часть оплаты обучения в осеннем семестре:</h1>
+          <table class="simple-table pay">
+            <tr><th colspan="4">Сумма оплаты за осенний семестр 2016-2017 уч. г. (1 часть) для студентов БГУИР</th></tr>
+            <tr><td>Факультеты</td><td>Цена с 01.09.2016</td><td>Сумма оплаты</td><td>Срок оплаты</td></tr>
+            <tr class="no-hover"><th colspan="4">Дневная форма обучения</th></tr>
+            <tr class="no-hover"><th colspan="4">Факультет компьютерного проектирования</th></tr>
+            <tr><td>1 курс</td><td>2 050,00</td><td>512,50</td><td>до 31.08.2016</td></tr>
+            <tr><td>2 курс</td><td>2 050,00</td><td>512,50</td><td>до 30.09.2016</td></tr>
+            <tr><td>3 курс</td><td>1 920,00</td><td>480,00</td><td>до 30.09.2016</td></tr>
+            <tr><td>4 курс</td><td>1 820,00</td><td>455,00</td><td>до 15.09.2016</td></tr>
+            <tr><td>5 курс</td><td>1 750,00</td><td>437,50</td><td>до 15.09.2016</td></tr>
+            <tr class="no-hover"><th colspan="4">Вечерняя форма обучения</th></tr>
+            <tr><td>1 курс</td><td>1 650,00</td><td>412,50</td><td>до 31.08.2016</td></tr>
+            <tr><td>2-3 курсы</td><td>1 450,00</td><td>362,50</td><td>до 30.09.2016</td></tr>
+            <tr><td>4-5 курсы</td><td>1 450,00</td><td>362,50</td><td>до 15.09.2016</td></tr>
+            <tr><td>6 курс</td><td>1 400,00</td><td>350,00</td><td>до 15.09.2016</td></tr>
+            <tr class="no-hover"><th colspan="4">Заочная форма обучения</th></tr>
+            <tr><td>1 курс</td><td>890,00</td><td>445,00</td><td>до 31.08.2016</td></tr>
+            <tr><td>2 курс</td><td>890,00</td><td>445,00</td><td>до 30.09.2016</td></tr>
+            <tr><td>3-5 курсы</td><td>800,00</td><td>400,00</td><td>до 15.09.2016</td></tr>
+            <tr><td>6 курс</td><td>760,00</td><td>380,00</td><td>до 15.09.2016</td></tr>
+            <tr class="no-hover"><th colspan="4">Магистратура</th></tr>
+            <tr class="no-hover"><th colspan="4">Дневная форма обучения 1 курс</th></tr>
+            <tr><td>Научно-исследовательская магистратура</td><td>2 650,00</td><td>662,50</td><td>до 31.08.2016</td></tr>
+            <tr><td>Магистратура с углубленной подготовкой специалиста</td><td>2 750,00</td><td>687,50</td><td>до 31.08.2016</td></tr>
+            <tr class="no-hover"><th colspan="4">Заочная форма обучения 1 курс</th></tr>
+            <tr><td>Научно-исследовательская магистратура</td><td>1 850,00</td><td>740,00</td><td>до 31.08.2016</td></tr>
+            <tr><td>Магистратура с углубленной подготовкой специалиста</td><td>1 920,00</td><td>768,00</td><td>до 31.08.2016</td></tr>
+            <tr class="no-hover"><th colspan="4">Заочная форма обучения 2 курс</th></tr>
+            <tr><td>Научно-исследовательская магистратура</td><td></td><td>370,00</td><td>до 15.09.2017</td></tr>
+            <tr><td>Магистратура с углубленной подготовкой специалиста</td><td></td><td>384,00</td><td>до 15.09.2017</td></tr>
+            <tr class="no-hover"><th colspan="4">Дистанционная форма обучения</th></tr>
+            <tr><td>1 курс, 1 дисциплина</td><td></td><td>77,00</td><td>до 31.08.2016</td></tr>
+            <tr><td>2 курс, 1 дисциплина</td><td></td><td>77,00</td><td>до 15.09.2017</td></tr>
+            <tr><td>3-6 курсы, 1 дисциплина</td><td></td><td>67.0</td><td>до 15.09.2017</td></tr>
+          </table>
+          <p>Оплата обучения производится через ЕРИП (единое расчетное информационное пространство) по номеру студенческого билета.</p>
+        </div>
+
+      </div>
+      <div id="container-also">
+        <div class="box-name-1"><h1>Студенту</h1><hr></div>
+        <div id="also">
+          <div class="also-item">
+            <a href="schedule"><p>Расписание</p></a>
+            <a href="tempstatemnts"><p>Шаблоны заявлений</p></a>
+            <a href="dormitoty"><p>Общежитие</p></a>
+            <a href="materialaid"><p>Материальная помощь</p></a>
+            <a href="studprivs"><p>Льготы для студентов</p></a>
+            <a href="scholarships"><p>Стипендии</p></a>
+            <a href="paideducation"><p class="selected">Платное обучение</p></a>
+            <a href="payreduction"><p>Понижение оплаты</p></a>
+            <a href="practice"><p>Практика</p></a>
+            <a href="graduationproject"><p>Дипломный проект</p></a>
+            <a href="distribution"><p>Распределение</p></a>
+            <a href="militarytraining"><p>Военная подготовка</p></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="box-name-1"><h1></h1><hr></div>
+        <div class="footer-link">
+          <a href="/">
+            <img width="328" height="328" src="{{asset('img/logo-footer.jpg')}}"></img>
+          </a>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li class="hlink">О факультете</li>
+            <li>общая информация</li>
+            <li>деканат</li>
+            <li>расположение</li>
+            <li>история</li>
+            <li>фотогалерея</li>
+            <li>награды</li>
+            <li>кафедры</li>
+            <li>студсовет</li>
+          </ul>
+          <ul>
+            <li class="hlink">Новости</li>
+          </ul>
+          <ul>
+            <li class="hlink">Абитуриенту</li>
+            <li>специальности</li>
+            <li>расположение корпусов</li>
+            <li>вступительная кампания</li>
+            <li>проходные баллы</li>
+            </ul>
+          <ul>
+            <li class="hlink">Студенту</li>
+            <li>расписание</li>
+            <li>шаблоны заявлений</li>
+            <li>общежитие</li>
+            <li>материальная помощь</li>
+            <li>льготы для студентов</li>
+            <li>стипендии</li>
+            <li>платное обучение</li>
+            <li>понижение оплаты</li>
+            <li>практика</li>
+            <li>дипломный проект</li>
+            <li>распределение</li>
+            <li>военная подготовка</li>
+          </ul>
+          <ul>
+            <li class="hlink">Объявления</li>
+          </ul>
+          <div class="footer-info">
+            <p>ЦИИР БГУИР, 2002-2016</p>
+            <h3>Все права защищены</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(window).on('load', function () { var $preloader = $('#p_prldr'); $preloader.delay().fadeOut('slow');});
+    </script>
+  </body>
+</html>
